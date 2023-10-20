@@ -32,3 +32,13 @@ const mergeArray = <T, U>(arr1: T[], arr2: U[]) => {
 }
 
 console.log(mergeArray(arr1,[{name:'leonardo'}]))
+
+// rest
+ const sum = (...num:number[]) => {
+    return num.reduce((acc, num) => acc + num, 0)
+ }
+
+
+ console.log(sum(11,2,5,8,4,87,800))
+
+ 

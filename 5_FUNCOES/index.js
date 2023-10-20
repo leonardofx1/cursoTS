@@ -24,3 +24,14 @@ const mergeArray = (arr1, arr2) => {
     return [...arr1, ...arr2];
 };
 console.log(mergeArray(arr1, [{ name: 'leonardo' }]));
+// rest
+const sum = (...num) => {
+    return num.reduce((acc, num) => acc + num, 0);
+};
+console.log(sum(11, 2, 5, 8, 4, 87, 800));
+const fusca = {
+    marca: 'vw',
+    rodas: 4
+};
+console.log(fusca);
+//  fusca.rodas = 6
