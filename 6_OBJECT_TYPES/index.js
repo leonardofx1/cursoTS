@@ -37,3 +37,18 @@ const myDog = {
 const arr = ['ola', 'hello'];
 //arr[0] = 'casa'
 console.log(arr);
+// mais generic
+const f = (arr) => {
+    return arr.map(item => `fruta gostosa ${item} `);
+};
+const array = ['maça', 'uva', 'manga'];
+console.log(f(array).forEach(fruta => console.log(fruta)));
+const A = (obj) => {
+    obj.price > 25000 ? console.log('o valor do apartamento é maior que R$25000 ') : console.log(`o valor de ${obj.price} não é maior que R$ 25000`);
+    return obj;
+};
+const apartamento = {
+    price: 30000,
+    color: 'green'
+};
+A(apartamento);

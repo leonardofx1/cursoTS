@@ -95,3 +95,23 @@ const arr: ReadonlyArray<string> =['ola', 'hello']
 
 //arr[0] = 'casa'
 console.log(arr)
+
+// mais generic
+
+const f = <T> (arr:T[]) => {
+return arr.map(item => `fruta gostosa ${item} `)
+}
+const array:string[] = ['maça', 'uva', 'manga']
+console.log(f(array).forEach(fruta => console.log(fruta)))
+
+const A = <T extends Casa> (obj:T) => {
+
+    obj.price > 25000 ? console.log('o valor do apartamento é maior que R$25000 '): console.log(`o valor de ${obj.price} não é maior que R$ 25000`)
+    return obj
+}
+
+const apartamento:Casa = {
+    price:30000,
+    color:'green'
+}
+A(apartamento)
