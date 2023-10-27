@@ -8,3 +8,19 @@ const createPerson = (person) => {
 };
 const person = createPerson({ age: 22, name: 'leoanrdo' });
 console.log(person.person);
+const animal = (andar, lati) => {
+    const action = { andar, lati };
+    return action;
+};
+const cachorro = animal(true, 'auauau');
+console.log(cachorro);
+const leonardo = {
+    language: 'PT-BR',
+    age: 22,
+    sexo: 'masculino'
+};
+const marcio = {
+    age: 32,
+    sexo: false
+};
+console.log(leonardo, marcio);
